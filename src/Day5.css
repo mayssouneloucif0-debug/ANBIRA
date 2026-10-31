@@ -1,0 +1,272 @@
+/* =========================
+   DAY 5 - JOBS
+========================= */
+
+.jobs-page {
+  min-height: 80vh;
+}
+
+.jobs-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 8% 90px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.job-card {
+  background-color: #ffffff;
+  padding: 40px 35px;
+  text-align: center;
+  border: 1px solid #e3ded3;
+}
+
+.job-card h2 {
+  margin-bottom: 18px;
+  color: #3f3f3f;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.job-card p {
+  color: #6a665d;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.job-card a {
+  display: inline-block;
+  padding: 13px 28px;
+  background-color: #4f5d45;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.job-card a:hover {
+  background-color: #3f4b38;
+}
+
+
+/* =========================
+   JOB APPLICATION
+========================= */
+
+.job-application-form-section {
+  max-width: 750px;
+  margin: 40px auto 90px;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.job-application-form-section h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.job-application-form {
+  text-align: right;
+}
+
+.job-application-form .form-group {
+  margin-bottom: 22px;
+}
+
+.job-application-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.job-application-form input,
+.job-application-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d8d2c4;
+  background-color: #f7f4ed;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.job-application-form textarea {
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.job-application-form input[type="file"] {
+  background-color: #ffffff;
+}
+
+.job-application-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background-color: #4f5d45;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.job-application-form button:hover {
+  background-color: #3f4b38;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 70px 8% 90px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.about-section {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.about-label {
+  color: #4f5d45;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.about-section > p:last-child {
+  color: #6a665d;
+  line-height: 1.9;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 8% 90px;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+}
+
+.contact-info {
+  display: grid;
+  gap: 18px;
+}
+
+.contact-info > div {
+  background-color: #ffffff;
+  padding: 25px;
+}
+
+.contact-info h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact-info p {
+  margin: 0;
+  color: #6a665d;
+}
+
+.contact-form-section {
+  background-color: #ffffff;
+  padding: 45px;
+}
+
+.contact-form-section h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.contact-form {
+  text-align: right;
+}
+
+.contact-form .form-group {
+  margin-bottom: 22px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d8d2c4;
+  background-color: #f7f4ed;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background-color: #4f5d45;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #3f4b38;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .jobs-grid,
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+    padding: 50px 20px 70px;
+  }
+
+  .job-application-form-section,
+  .contact-form-section {
+    margin: 25px 15px 60px;
+    padding: 30px 20px;
+  }
+
+  .job-card {
+    padding: 30px 25px;
+  }
+
+  .about-section {
+    padding: 30px 25px;
+  }
+
+  .contact-content {
+    margin: 0;
+  }
+}

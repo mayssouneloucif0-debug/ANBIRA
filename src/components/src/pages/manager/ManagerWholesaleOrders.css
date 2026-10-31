@@ -1,0 +1,221 @@
+.manager-wholesale-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f5f1f6;
+  direction: rtl;
+}
+
+/* Header */
+.manager-wholesale-header {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.manager-wholesale-label {
+  margin: 0 0 8px;
+  color: #76527f;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.manager-wholesale-header h1 {
+  margin: 0 0 10px;
+  color: #39263e;
+  font-size: 36px;
+}
+
+.manager-wholesale-header p {
+  margin: 0;
+  color: #756c76;
+  font-size: 16px;
+}
+
+.manager-wholesale-header button {
+  border: none;
+  border-radius: 12px;
+  padding: 13px 22px;
+  background: #6f4679;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.manager-wholesale-header button:hover {
+  background: #563460;
+  transform: translateY(-1px);
+}
+
+/* Error */
+.manager-wholesale-error {
+  max-width: 1200px;
+  margin: 0 auto 25px;
+  padding: 15px 18px;
+  border-radius: 12px;
+  background: #f8dddd;
+  color: #8a3030;
+  text-align: center;
+}
+
+/* Loading */
+.manager-wholesale-loading {
+  max-width: 1200px;
+  margin: 80px auto;
+  text-align: center;
+  color: #6f4679;
+  font-size: 18px;
+}
+
+/* Empty */
+.manager-wholesale-empty {
+  max-width: 700px;
+  margin: 70px auto;
+  padding: 55px 30px;
+  background: white;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(70, 45, 75, 0.08);
+}
+
+.manager-wholesale-empty h2 {
+  margin: 0 0 10px;
+  color: #39263e;
+}
+
+.manager-wholesale-empty p {
+  margin: 0;
+  color: #777078;
+  line-height: 1.7;
+}
+
+/* Orders */
+.manager-wholesale-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 22px;
+}
+
+.manager-wholesale-card {
+  padding: 25px;
+  background: white;
+  border: 1px solid #e8dfe9;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(70, 45, 75, 0.07);
+  transition: 0.2s;
+}
+
+.manager-wholesale-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(70, 45, 75, 0.11);
+}
+
+/* Top */
+.manager-wholesale-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #eee7ef;
+}
+
+.manager-wholesale-top div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.manager-wholesale-top div span {
+  color: #777078;
+  font-size: 14px;
+}
+
+.manager-wholesale-top strong {
+  color: #39263e;
+  font-size: 20px;
+}
+
+/* Status */
+.manager-wholesale-status {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #eee4f0;
+  color: #6f4679;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Information */
+.manager-wholesale-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.manager-wholesale-info p {
+  margin: 0;
+  padding: 13px 15px;
+  border-radius: 10px;
+  background: #f7f3f7;
+  color: #655d67;
+  font-size: 14px;
+}
+
+.manager-wholesale-info strong {
+  color: #4b354f;
+}
+
+/* Description */
+.manager-wholesale-description {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f7f3f7;
+  color: #5f5561;
+  line-height: 1.7;
+}
+
+.manager-wholesale-description p {
+  margin: 7px 0 0;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .manager-wholesale-page {
+    padding: 25px 15px;
+  }
+
+  .manager-wholesale-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .manager-wholesale-header h1 {
+    font-size: 29px;
+  }
+
+  .manager-wholesale-header button {
+    width: 100%;
+  }
+
+  .manager-wholesale-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .manager-wholesale-info {
+    grid-template-columns: 1fr;
+  }
+
+  .manager-wholesale-card {
+    padding: 18px;
+  }
+}

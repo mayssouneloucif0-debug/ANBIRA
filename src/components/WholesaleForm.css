@@ -1,0 +1,247 @@
+.wholesale-form-section {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 45px 25px 120px;
+}
+
+.wholesale-form-section h2 {
+  margin-bottom: 35px;
+  color: #f5eee6;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.wholesale-form {
+  padding: 45px;
+  background: #211e24;
+  border: 1px solid #39333d;
+  border-radius: 20px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.three-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  color: #e6ded6;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #403945;
+  border-radius: 6px;
+  outline: none;
+  background: #18161b;
+  color: #f2ece5;
+  font-family: inherit;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #76548b;
+  box-shadow: 0 0 0 3px rgba(118, 84, 139, 0.12);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #77717a;
+}
+
+.form-group small {
+  color: #817982;
+  font-size: 12px;
+}
+
+.wholesale-variants {
+  margin: 10px 0 30px;
+  padding: 24px;
+  background: #19171c;
+  border: 1px solid #3b3540;
+  border-right: 3px solid #76548b;
+}
+
+.wholesale-variants h3 {
+  margin: 0 0 8px;
+  color: #e6ded6;
+  font-size: 18px;
+}
+
+.wholesale-variants > p {
+  margin: 0 0 20px;
+  color: #aaa3ad;
+  font-size: 13px;
+}
+
+.wholesale-variant-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  align-items: end;
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid #403945;
+  border-radius: 8px;
+}
+
+.wholesale-variant-row .form-group {
+  margin-bottom: 0;
+}
+
+.add-variant-button,
+.remove-variant-button {
+  width: auto !important;
+  padding: 10px 15px !important;
+  font-size: 13px !important;
+}
+
+.remove-variant-button {
+  grid-column: 1 / -1;
+  justify-self: start;
+  border-color: #9b5959 !important;
+  background: transparent !important;
+  color: #e4a7a7 !important;
+}
+
+.trial-box {
+  margin: 10px 0 30px;
+  padding: 25px;
+  background: #28212c;
+  border: 1px solid #76548b;
+  border-radius: 10px;
+}
+
+.trial-box-title {
+  margin-bottom: 8px;
+  color: #d2a15a;
+  font-size: 18px;
+}
+
+.trial-box p {
+  margin-bottom: 20px;
+  color: #aaa3ad;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.trial-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trial-options label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #eee6df;
+  cursor: pointer;
+}
+
+.trial-options input {
+  accent-color: #c99a52;
+}
+
+.delivery-box {
+  margin-bottom: 25px;
+  padding: 25px;
+  background: #19171c;
+  border: 1px solid #3b3540;
+  border-right: 3px solid #76548b;
+}
+
+.delivery-box .form-group {
+  margin-bottom: 20px;
+}
+
+.form-note {
+  margin-bottom: 25px;
+  padding: 18px 20px;
+  background: #29222e;
+  border-right: 2px solid #c99a52;
+  color: #aaa3ad;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.wholesale-form button {
+  width: 100%;
+  padding: 17px;
+  border: 1px solid #c99a52;
+  border-radius: 5px;
+  background: #c99a52;
+  color: #17151a;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.wholesale-form button:hover {
+  background: transparent;
+  color: #d7ad6b;
+}
+
+.success-message {
+  margin-top: 25px;
+  padding: 18px;
+  background: #292230;
+  border: 1px solid #76548b;
+  color: #d8c8df;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .wholesale-form-section {
+    padding: 35px 18px 80px;
+  }
+
+  .wholesale-form {
+    padding: 25px 20px;
+  }
+
+  .form-grid,
+  .three-columns,
+  .wholesale-variant-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .wholesale-variant-row {
+    gap: 12px;
+  }
+
+  .wholesale-variant-row .form-group {
+    margin-bottom: 16px;
+  }
+
+  .trial-box {
+    padding: 20px;
+  }
+}

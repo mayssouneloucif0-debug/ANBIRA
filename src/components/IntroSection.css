@@ -1,0 +1,50 @@
+.intro-section {
+  direction: rtl;
+
+  max-width: 850px;
+  margin: 0 auto;
+
+  padding: 80px 30px 60px;
+
+  text-align: center;
+}
+
+.intro-label {
+  margin-bottom: 15px;
+
+  color: #76548b;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+.intro-section h2 {
+  margin: 0 0 20px;
+
+  color: #352541;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.intro-text {
+  max-width: 700px;
+  margin: 0 auto;
+
+  color: #706878;
+  font-size: 16px;
+  line-height: 2;
+}
+
+@media (max-width: 600px) {
+  .intro-section {
+    padding: 60px 20px 45px;
+  }
+
+  .intro-section h2 {
+    font-size: 30px;
+  }
+
+  .intro-text {
+    font-size: 15px;
+  }
+}

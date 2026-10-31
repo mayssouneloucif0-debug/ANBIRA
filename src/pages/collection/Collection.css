@@ -1,0 +1,170 @@
+.collection-page {
+  direction: rtl;
+  background: #ffffff;
+  color: #352541;
+}
+
+.collection-section {
+  max-width: 1250px;
+  margin: 0 auto;
+
+  padding: 90px 30px;
+}
+
+.collection-intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.collection-intro p {
+  margin-bottom: 15px;
+
+  color: #76548b;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+.collection-intro h2 {
+  margin: 0 0 15px;
+
+  color: #352541;
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.collection-intro span {
+  color: #807785;
+  font-size: 16px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.product-card {
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid #e5deea;
+
+  transition: 0.35s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 18px 40px rgba(53, 37, 65, 0.08);
+}
+
+.product-image {
+  position: relative;
+
+  height: 430px;
+
+  overflow: hidden;
+
+  background: #f5f1f8;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.04);
+}
+
+.product-type {
+  position: absolute;
+
+  top: 18px;
+  right: 18px;
+
+  padding: 7px 14px;
+
+  background: #ffffff;
+
+  color: #5b3b70;
+
+  font-size: 13px;
+}
+
+.product-info {
+  padding: 25px;
+}
+
+.product-info h3 {
+  margin: 0 0 10px;
+
+  color: #352541;
+
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.product-info p {
+  margin-bottom: 20px;
+
+  color: #76548b;
+
+  font-size: 15px;
+}
+
+.product-info a {
+  display: inline-block;
+
+  padding-bottom: 5px;
+
+  color: #5b3b70;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #5b3b70;
+
+  font-size: 14px;
+
+  transition: 0.3s ease;
+}
+
+.product-info a:hover {
+  color: #352541;
+  border-color: #352541;
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-image {
+    height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .collection-section {
+    padding: 60px 20px;
+  }
+
+  .collection-intro h2 {
+    font-size: 34px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image {
+    height: 450px;
+  }
+}

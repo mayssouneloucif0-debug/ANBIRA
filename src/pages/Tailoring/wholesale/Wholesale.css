@@ -1,0 +1,44 @@
+.wholesale-page {
+  direction: rtl;
+  min-height: 100vh;
+  background: #17151a;
+  color: #f5f0e9;
+}
+
+.wholesale-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 75px 25px 20px;
+}
+
+.wholesale-intro p {
+  margin-bottom: 12px;
+  color: #c99a52;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.wholesale-intro h2 {
+  margin: 0 0 18px;
+  color: #f8f2ea;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.wholesale-intro span {
+  display: block;
+  max-width: 700px;
+  color: #aaa3ad;
+  font-size: 15px;
+  line-height: 2;
+}
+
+@media (max-width: 700px) {
+  .wholesale-intro {
+    padding: 50px 20px 10px;
+  }
+
+  .wholesale-intro h2 {
+    font-size: 32px;
+  }
+}

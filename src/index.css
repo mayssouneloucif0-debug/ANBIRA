@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #352541;
+  line-height: 1.6;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ANBIRA dark atelier design system */
+:root {
+  --ink: #111110;
+  --surface: #1a1917;
+  --surface-raised: #23211e;
+  --surface-soft: #2c2924;
+  --line: rgba(217, 188, 139, 0.18);
+  --gold: #d9ad6c;
+  --gold-bright: #efc782;
+  --cream: #f4e7d2;
+  --muted: #b8afa1;
+  --shadow: 0 24px 55px rgba(0, 0, 0, 0.38);
+}
+
+body {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+::selection { background: var(--gold); color: var(--ink); }
+
+/* Shared navigation and footer */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(17, 17, 16, 0.92);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(16px);
+}
+.navbar-container { min-height: 76px; max-width: 1320px; }
+.navbar-logo, .footer-logo { color: var(--cream); }
+.logo-scissors, .footer-logo span { color: var(--gold); }
+.navbar-links a { color: var(--muted); }
+.navbar-links a:hover, .navbar-links a.active { color: var(--gold-bright); }
+.navbar-links a.active::after { background: var(--gold); height: 2px; }
+.footer { background: #0b0b0a; border-top: 1px solid var(--line); color: var(--muted); }
+.footer-logo strong, .footer-links h3, .footer-contact h3 { color: var(--cream); }
+.footer-links a, .footer-contact-link { color: var(--muted); }
+.footer-links a:hover, .footer-contact-link:hover { color: var(--gold-bright); }
+.footer-bottom { border-top-color: var(--line); }
+
+/* Page shell and headings */
+.home-page, .collection-page, .product-details-page, .product-order-page,
+.tailoring-page, .single-piece-page, .wholesale-page, .jobs-page, .about-page, .contact-page {
+  background: radial-gradient(circle at 90% 0%, #2b271f 0, var(--ink) 34rem);
+  color: var(--cream);
+}
+.page-header {
+  min-height: 280px;
+  background: radial-gradient(circle at 50% -20%, #3c3223, #151412 62%);
+  color: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+.page-header p:first-child, .collection-intro p, .tailoring-intro p, .wholesale-intro p,
+.jobs-intro p, .intro-label, .about-label, .contact-label, .hero-brand, .small-title,
+.section-heading p, .home-cta > p, .product-category { color: var(--gold); }
+.page-header h1, .collection-intro h2, .tailoring-intro h2, .wholesale-intro h2,
+.jobs-intro h2, .intro-section h2, .about-story-content h2, .about-values-heading h2,
+.contact-info h2, .product-info h1, .product-info h3, .selected-product-info h2,
+.hero-content h1, .section-heading h2, .home-cta h2 { color: var(--cream); font-family: Georgia, "Times New Roman", serif; }
+.page-header p:last-child, .collection-intro span, .tailoring-intro span, .wholesale-intro span,
+.jobs-intro span, .intro-text, .contact-description { color: var(--muted); }
+
+/* Home */
+.hero-section { background: radial-gradient(circle at 78% 25%, #443725 0, #161513 44%, var(--ink) 100%); }
+.hero-content { padding: 90px clamp(28px, 7vw, 100px); }
+.hero-description { color: var(--muted); }
+.hero-image { padding: 42px; }
+.hero-image-placeholder {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(239, 199, 130, .25);
+  border-radius: 34px;
+  background: linear-gradient(145deg, #51422e, #24201b 42%, #121211);
+  box-shadow: var(--shadow), inset 0 1px rgba(255,255,255,.14);
+}
+.hero-image-placeholder::before {
+  content: "ATELIER • COLLECTION 2026";
+  position: absolute; inset: 26px auto auto 28px;
+  color: var(--gold); letter-spacing: 3px; font-size: 11px;
+}
+.hero-image-placeholder::after {
+  content: "✦";
+  position: absolute; bottom: -46px; right: 8%;
+  color: rgba(217,173,108,.18); font-size: 260px;
+}
+.hero-image-placeholder span:first-child { color: var(--cream); font-family: Georgia, serif; z-index: 1; }
+.hero-image-placeholder span:last-child { color: var(--gold); z-index: 1; }
+.hero-button, .home-cta a, .product-order-button, .tailoring-form button,
+.wholesale-form button, .single-piece-form button, .product-order-form button,
+.contact-form button, .job-card a {
+  border: 1px solid transparent; border-radius: 12px;
+  background: linear-gradient(135deg, var(--gold-bright), #b67c38);
+  color: #19130c; font-weight: 700; box-shadow: 0 10px 24px rgba(182,124,56,.2);
+}
+.hero-button:hover, .home-cta a:hover, .product-order-button:hover, .tailoring-form button:hover,
+.wholesale-form button:hover, .single-piece-form button:hover, .product-order-form button:hover,
+.contact-form button:hover, .job-card a:hover { background: var(--cream); color: var(--ink); transform: translateY(-2px); }
+.services-section { max-width: 1320px; }
+.section-heading span, .service-card p { color: var(--muted); }
+.service-card, .tailoring-card, .value-card, .job-card {
+  background: linear-gradient(145deg, #27241f, #191817);
+  color: var(--cream); border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+.service-card:hover, .tailoring-card:hover, .value-card:hover, .job-card:hover {
+  border-color: rgba(239,199,130,.55); box-shadow: var(--shadow);
+}
+.service-icon, .service-link, .tailoring-card-icon, .tailoring-card a, .value-card > span { color: var(--gold); }
+.service-number, .tailoring-card-number, .job-number { color: rgba(239,199,130,.45); }
+.home-about { background: linear-gradient(135deg, #252018, #111110); }
+.home-about-content > p:not(.small-title) { color: var(--muted); }
+.home-about-decoration { background: radial-gradient(circle, #544126, #1b1916 70%); }
+.home-about-decoration span, .home-about-decoration p { color: var(--gold-bright); }
+.home-cta { background: linear-gradient(180deg, #171512, #0e0e0d); }
+
+/* Catalogue and product view */
+.collection-section, .tailoring-options, .single-piece-section, .wholesale-page,
+.jobs-section, .about-values, .contact-section, .product-order-section { background: transparent; }
+.product-card { background: var(--surface-raised); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,.2); }
+.product-card:hover { box-shadow: var(--shadow); }
+.product-image { background: #302b24; }
+.product-type { background: rgba(20,19,17,.9); color: var(--gold-bright); border: 1px solid var(--line); border-radius: 999px; }
+.product-info { color: var(--cream); }
+.product-info p, .product-price { color: var(--gold-bright); }
+.product-info a { color: var(--gold); border-color: var(--gold); }
+.product-details { background: linear-gradient(145deg, #24211c, #151412); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); }
+.product-image-wrapper { background: #312b21; border-radius: 18px; overflow: hidden; }
+.product-description, .product-detail-group > span { color: var(--muted); }
+.product-colors span, .product-sizes span { background: #302c26; color: var(--cream); border-color: var(--line); border-radius: 9px; }
+.product-back-button { color: var(--cream); border-color: var(--line); border-radius: 12px; background: transparent; }
+.product-back-button:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Forms, messages, information panels */
+.tailoring-form-section, .wholesale-form-section, .single-piece-form, .product-order-form,
+.contact-form, .selected-product, .contact-detail, .delivery-box, .trial-box, .order-notice,
+.form-note, .order-success, .success-message, .contact-success, .order-notice {
+  background: linear-gradient(145deg, #27241f, #191817); color: var(--cream); border: 1px solid var(--line); border-radius: 18px;
+}
+.tailoring-form-section h2, .wholesale-form-section h2, .single-piece-intro h2,
+.selected-product-info h2, .contact-form h2 { color: var(--cream); }
+.form-group label, .contact-form .form-group label { color: var(--cream); }
+.form-group input, .form-group textarea, .form-group select, .contact-form input, .contact-form textarea,
+.job-application-form input, .job-application-form textarea {
+  background: #121210; color: var(--cream); border-color: var(--line); border-radius: 10px;
+}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus,
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(217,173,108,.12); }
+.form-group input::placeholder, .form-group textarea::placeholder, .contact-form input::placeholder,
+.contact-form textarea::placeholder { color: #8e877d; }
+.delivery-box, .trial-box, .order-notice, .form-note { background: rgba(217,173,108,.08); color: var(--muted); }
+.order-success, .success-message, .contact-success { border-color: rgba(127, 184, 117, .45); color: #bfe2b6; }
+
+/* Story and responsive polish */
+.about-story { background: linear-gradient(135deg, #1d1a16, #111110); }
+.about-story-content p:not(.about-label), .value-card p, .job-content p, .contact-detail p { color: var(--muted); }
+.about-story-decoration { background: radial-gradient(circle at center, #5a452a, #191714 68%); }
+.about-story-decoration span, .about-story-decoration strong { color: var(--gold-bright); }
+.contact-info, .contact-detail span { color: var(--gold); }
+
+@media (max-width: 900px) {
+  .hero-image { padding: 24px; }
+  .navbar { position: relative; }
+}

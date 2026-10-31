@@ -1,0 +1,181 @@
+.tailoring-form-section {
+  direction: rtl;
+
+  max-width: 900px;
+  margin: 0 auto;
+
+  padding: 40px 30px 100px;
+}
+
+.tailoring-form-section h2 {
+  margin-bottom: 40px;
+
+  color: #352541;
+
+  font-size: 32px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+.tailoring-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  padding: 45px;
+
+  background: #ffffff;
+
+  border: 1px solid #e3dce8;
+
+  box-shadow: 0 15px 45px rgba(53, 37, 65, 0.06);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.form-group label {
+  color: #352541;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+
+  padding: 14px 15px;
+
+  border: 1px solid #d9cfdf;
+
+  background: #ffffff;
+
+  color: #352541;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.form-group textarea {
+  resize: vertical;
+
+  min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #76548b;
+
+  box-shadow: 0 0 0 3px rgba(118, 84, 139, 0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa2ae;
+}
+
+.form-group input[type="file"] {
+  padding: 11px;
+
+  cursor: pointer;
+}
+
+.input-note {
+  color: #8a828e;
+
+  font-size: 12px;
+}
+
+.delivery-fields {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 24px;
+
+  padding: 22px;
+
+  background: #faf8fb;
+
+  border: 1px solid #e3dce8;
+}
+
+.form-note {
+  padding: 15px 18px;
+
+  background: #f5f1f8;
+
+  color: #706878;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+.tailoring-form button {
+  width: 100%;
+
+  padding: 16px;
+
+  border: 1px solid #5b3b70;
+
+  background: #5b3b70;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.tailoring-form button:hover {
+  background: #ffffff;
+
+  color: #5b3b70;
+}
+
+.success-message {
+  margin-top: 25px;
+
+  padding: 18px;
+
+  background: #f0eaf3;
+
+  color: #5b3b70;
+
+  text-align: center;
+
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .tailoring-form-section {
+    padding: 30px 20px 70px;
+  }
+
+  .tailoring-form-section h2 {
+    font-size: 27px;
+  }
+
+  .tailoring-form {
+    padding: 25px 20px;
+  }
+
+  .delivery-fields {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,247 @@
+.manager-tailoring-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f5f1f6;
+  direction: rtl;
+}
+
+/* Header */
+.manager-tailoring-header {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.manager-tailoring-label {
+  margin: 0 0 8px;
+  color: #76527f;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.manager-tailoring-header h1 {
+  margin: 0 0 10px;
+  color: #39263e;
+  font-size: 36px;
+}
+
+.manager-tailoring-header p {
+  margin: 0;
+  color: #756c76;
+  font-size: 16px;
+}
+
+.manager-tailoring-header button {
+  border: none;
+  border-radius: 12px;
+  padding: 13px 22px;
+  background: #6f4679;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.manager-tailoring-header button:hover {
+  background: #563460;
+  transform: translateY(-1px);
+}
+
+/* Error */
+.manager-tailoring-error {
+  max-width: 1200px;
+  margin: 0 auto 25px;
+  padding: 15px 18px;
+  border-radius: 12px;
+  background: #f8dddd;
+  color: #8a3030;
+  text-align: center;
+}
+
+/* Loading */
+.manager-tailoring-loading {
+  max-width: 1200px;
+  margin: 80px auto;
+  text-align: center;
+  color: #6f4679;
+  font-size: 18px;
+}
+
+/* Empty */
+.manager-tailoring-empty {
+  max-width: 700px;
+  margin: 70px auto;
+  padding: 55px 30px;
+  background: white;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(70, 45, 75, 0.08);
+}
+
+.manager-tailoring-empty h2 {
+  margin: 0 0 10px;
+  color: #39263e;
+}
+
+.manager-tailoring-empty p {
+  margin: 0;
+  color: #777078;
+  line-height: 1.7;
+}
+
+/* Orders */
+.manager-tailoring-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 22px;
+}
+
+.manager-tailoring-card {
+  padding: 25px;
+  background: white;
+  border: 1px solid #e8dfe9;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(70, 45, 75, 0.07);
+  transition: 0.2s;
+}
+
+.manager-tailoring-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(70, 45, 75, 0.11);
+}
+
+/* Top */
+.manager-tailoring-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #eee7ef;
+}
+
+.manager-tailoring-top div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.manager-tailoring-top div span {
+  color: #777078;
+  font-size: 14px;
+}
+
+.manager-tailoring-top strong {
+  color: #39263e;
+  font-size: 20px;
+}
+
+/* Status */
+.manager-tailoring-status {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #eee4f0;
+  color: #6f4679;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Information */
+.manager-tailoring-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.manager-tailoring-info p {
+  margin: 0;
+  padding: 13px 15px;
+  border-radius: 10px;
+  background: #f7f3f7;
+  color: #655d67;
+  font-size: 14px;
+}
+
+.manager-tailoring-info strong {
+  color: #4b354f;
+}
+
+/* Description */
+.manager-tailoring-description,
+.manager-tailoring-address {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f7f3f7;
+  color: #5f5561;
+  line-height: 1.7;
+}
+
+.manager-tailoring-description p,
+.manager-tailoring-address p {
+  margin: 7px 0 0;
+}
+
+.manager-tailoring-info a {
+  color: #6f4679;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.manager-tailoring-image-link {
+  display: inline-block;
+  margin-top: 18px;
+}
+
+.manager-tailoring-image {
+  display: block;
+  width: min(280px, 100%);
+  max-height: 320px;
+  object-fit: cover;
+  border: 1px solid #e8dfe9;
+  border-radius: 12px;
+}
+
+.manager-tailoring-delete-button {
+  margin-right: auto;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .manager-tailoring-page {
+    padding: 25px 15px;
+  }
+
+  .manager-tailoring-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .manager-tailoring-header h1 {
+    font-size: 29px;
+  }
+
+  .manager-tailoring-header button {
+    width: 100%;
+  }
+
+  .manager-tailoring-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .manager-tailoring-info {
+    grid-template-columns: 1fr;
+  }
+
+  .manager-tailoring-card {
+    padding: 18px;
+  }
+}

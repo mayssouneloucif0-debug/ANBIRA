@@ -1,0 +1,139 @@
+.footer {
+  direction: rtl;
+  background: #352541;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.footer-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 70px 30px;
+
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1.3fr;
+  gap: 70px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  width: fit-content;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-logo span {
+  font-size: 26px;
+  color: #c7afd3;
+}
+
+.footer-logo strong {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.footer-brand p {
+  max-width: 300px;
+  color: #d4ccd8;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.footer-links,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.footer-links a {
+  color: #d4ccd8;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #c7afd3;
+}
+
+.footer-contact p {
+  color: #d4ccd8;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer-contact-link {
+  margin-top: 8px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  border-bottom: 1px solid #c7afd3;
+  padding-bottom: 5px;
+
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.footer-contact-link:hover {
+  color: #c7afd3;
+}
+
+.footer-bottom {
+  border-top: 1px solid #554464;
+  padding: 22px 30px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #bdb3c3;
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding: 55px 25px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 45px 20px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    padding: 20px;
+  }
+}

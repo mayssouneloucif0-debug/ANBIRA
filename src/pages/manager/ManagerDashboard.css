@@ -1,0 +1,115 @@
+.manager-dashboard {
+  min-height: 100vh;
+  padding: 50px 30px;
+  background: #f5f2f7;
+  color: #3d3442;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+.dashboard-label {
+  margin: 0 0 8px;
+  color: #8a638f;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 10px;
+  color: #5b3b68;
+  font-size: 38px;
+}
+
+.dashboard-header p {
+  color: #6b626d;
+}
+
+.logout-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #6d4a78;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.logout-button:hover {
+  background: #573863;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.dashboard-card {
+  padding: 30px;
+  min-height: 190px;
+  border: none;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-card span {
+  font-size: 32px;
+}
+
+.dashboard-card h2 {
+  margin: 18px 0 8px;
+  color: #5b3b68;
+  font-size: 21px;
+}
+
+.dashboard-card p {
+  margin: 0;
+  color: #6b626d;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .manager-dashboard {
+    padding: 30px 15px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header h1 {
+    font-size: 30px;
+  }
+}

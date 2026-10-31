@@ -1,0 +1,223 @@
+.manager-applications-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f5f1f6;
+  direction: rtl;
+}
+
+.manager-applications-header {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0 10px 30px rgba(80, 45, 90, 0.08);
+}
+
+.manager-applications-label {
+  margin: 0 0 8px;
+  color: #765080;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.manager-applications-header h1 {
+  margin: 0 0 10px;
+  color: #3d2943;
+  font-size: 34px;
+}
+
+.manager-applications-header p {
+  margin: 0;
+  color: #776d78;
+}
+
+.manager-applications-header button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  background: #eee7f0;
+  color: #51365a;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.manager-applications-header button:hover {
+  background: #dfd2e2;
+}
+
+.manager-applications-error {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  padding: 15px 20px;
+  background: #fbeaea;
+  color: #9a3d3d;
+  border: 1px solid #edc7c7;
+  border-radius: 14px;
+}
+
+.manager-applications-loading {
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+  color: #6f6470;
+  font-size: 17px;
+}
+
+.manager-applications-empty {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 70px 30px;
+  background: #ffffff;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(80, 45, 90, 0.07);
+}
+
+.manager-applications-empty-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eee5f0;
+  color: #765080;
+  font-size: 30px;
+}
+
+.manager-applications-empty h2 {
+  margin: 0 0 10px;
+  color: #46334b;
+}
+
+.manager-applications-empty p {
+  margin: 0;
+  color: #817781;
+}
+
+.manager-applications-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.manager-application-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(80, 45, 90, 0.07);
+}
+
+.manager-application-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.manager-application-number {
+  display: block;
+  margin-bottom: 7px;
+  color: #9a8c9d;
+  font-size: 13px;
+}
+
+.manager-application-card h2 {
+  margin: 0;
+  color: #453149;
+  font-size: 23px;
+}
+
+.manager-application-status {
+  flex-shrink: 0;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #eee5f0;
+  color: #684a70;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.manager-application-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.manager-application-info p {
+  margin: 0;
+  color: #776d78;
+  line-height: 1.6;
+}
+
+.manager-application-info strong,
+.manager-application-message strong {
+  color: #58425d;
+}
+
+.manager-application-message {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #f8f4f8;
+}
+
+.manager-application-message p {
+  margin: 8px 0 0;
+  color: #776d78;
+  line-height: 1.7;
+}
+
+.manager-application-cv {
+  margin-top: 20px;
+}
+
+.manager-application-cv a {
+  display: inline-block;
+  padding: 10px 17px;
+  border-radius: 10px;
+  background: #6d4777;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.manager-application-cv a:hover {
+  background: #583863;
+}
+
+@media (max-width: 800px) {
+  .manager-applications-page {
+    padding: 20px;
+  }
+
+  .manager-applications-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .manager-applications-header button {
+    width: 100%;
+  }
+
+  .manager-applications-list {
+    grid-template-columns: 1fr;
+  }
+
+  .manager-application-top {
+    flex-direction: column;
+  }
+}
